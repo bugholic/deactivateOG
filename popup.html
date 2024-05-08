@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deactivating Events</title>
+</head>
+<style>
+    @keyframes deactivate {
+        from {
+            transform: rotate(0deg);
+        }
+
+        to {
+            transform: rotate(90deg);
+            filter: brightness(30%);
+        }
+    }
+
+    @keyframes mode {
+        from{
+            background-color: #fff;
+        }
+        to{
+            background-color: #444;
+            color: white;
+        }
+    }
+    body{
+        background-color: #444;
+        animation-name: mode;
+        animation-duration: 2s;
+        color: white;
+    }
+
+    img {
+        height: 200px;
+        width: 200px;
+        transform: rotate(90deg);
+        animation-name: deactivate;
+        animation-duration: 2s;
+        border-radius: 50%;
+    }
+</style>
+
+<body style="text-align: center;">
+    <h1>Ongage Automate</h1>
+    <img src="./icon16.png" alt="">
+    <h3>Powered by AYUV</h3>
+</body>
+
+</html>
